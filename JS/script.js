@@ -9,12 +9,10 @@ function position(event) {
 const movement = (event) => {
     //const canvas = document.getElementById("myCanvas");
     //const ctx = canvas.getContext("2d");
-   
-    alert(event.clientX);
+    ctx.fillRect(event.clientX, event.clientY, 100, 100);
 }
 
 const canvas = document.getElementById("testCanvas");
-alert(canvas);
 const ctx = canvas.getContext("2d");
 ctx.fillStyle = "green";
 ctx.fillRect(10, 10, 100, 100);
